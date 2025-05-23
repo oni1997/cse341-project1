@@ -1,0 +1,45 @@
+###LOCALHOST
+
+
+###Get all users
+GET http://localhost:3000/users
+
+###Get user by id
+GET http://localhost:3000/users/683053d3893d54e0efbd94a2
+
+###Create a new user
+# firstName: req.body.firstName,
+# lastName: req.body.lastName,
+# email: req.body.email,
+# favoriteColor: req.body.favoriteColor,
+# birthday: req.body.birthday
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "email": "test@example.com",
+  "username": "testuserxc",
+  "name": "Test User Four",
+  "ipaddress": "203.0.113.234"
+}
+
+###Update a user
+# username : req.body.username,
+# email : req.body.email,
+# name : req.body.name,
+# ipaddress : req.body.ipaddress
+
+PUT http://localhost:3000/users/6823776216f8d7150d4aa5c8
+Content-Type: application/json
+
+{
+  "email": "test@example.com",
+  "username": "testuserxc",
+  "name": "Test User Four",
+  "ipaddress": "203.0.113.234"
+}
+
+
+###Delete a user
+DELETE http://localhost:3000/users/6823776216f8d7150d4aa5c8
+
