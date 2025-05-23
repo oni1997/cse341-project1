@@ -5,10 +5,9 @@
     "description": "USers Api",
     "version": "1.0.0"
   },
-  "host": "https://cse341-project1-xqzd.onrender.com",
+  "host": "cse341-project1-xqzd.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http",
     "https"
   ],
   "paths": {
